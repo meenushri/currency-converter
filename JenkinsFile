@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         stage('Clone Repository') {
-            steps {
-                git 'https://github.com/meenushri/currency-converter.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/meenushri/currency-converter.git'
+    }
+}
 
         stage('Build') {
             steps {
